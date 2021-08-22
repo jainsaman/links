@@ -31,10 +31,20 @@ body{
     background-color: var(--light);
     color: var(--dark);
     padding: 50px 16px;
-    /* width: 100%; */
+    max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 16px;
+    position: fixed;
+    z-index: 99;
+    background-color: var(--light);
 }
 .profileImg{
     height: 128px;
@@ -61,6 +71,7 @@ body{
     font-weight: 500;
 }
 .linkCards{
+    margin-top: 375px;
     padding: 4px 20px;
     width: 100%;
 }
