@@ -83,7 +83,7 @@ body{
 .linkCards .card{
     height: auto;
     width: 100%;
-    padding: 20px;
+    padding: 20px 12px;
     border-radius: 8px;
     box-shadow: 0 0 8px #303B4130;
     display: flex;
