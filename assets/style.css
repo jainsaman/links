@@ -30,7 +30,7 @@ body{
     font-family: var(--fGlobal);
     background-color: var(--light);
     color: var(--dark);
-    padding: 50px 16px;
+    padding: 0px 16px;
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -42,6 +42,7 @@ body{
     flex-direction: column;
     width: 100%;
     padding: 0 16px;
+    padding-top: 50px;
     position: fixed;
     z-index: 99;
     background-color: var(--light);
@@ -71,7 +72,7 @@ body{
     font-weight: 500;
 }
 .linkCards{
-    margin-top: 375px;
+    margin-top: 425px;
     padding: 4px 20px;
     width: 100%;
 }
@@ -80,8 +81,9 @@ body{
     color: var(--dark);
 }
 .linkCards .card{
-    height: 75px;
+    height: auto;
     width: 100%;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 8px #303B4130;
     display: flex;
@@ -108,9 +110,11 @@ body{
     font-weight: 800;
     letter-spacing: 1px;
     margin-left: 12px;
+    text-align: center;
 }
 .icons{
     margin-top: 30px;
+    padding-bottom: 50px;
     font-size: 26px;
     display: flex;
     justify-content: space-evenly;
@@ -128,6 +132,6 @@ body{
 }
 @media screen and (min-width: 768px){
     body{
-        padding: 40px 30vw;
+        padding: 0px 30vw;
     }
 }
