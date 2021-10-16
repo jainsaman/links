@@ -46,6 +46,7 @@ body{
     position: fixed;
     z-index: 99;
     background-color: var(--light);
+    box-shadow: 0 0 4px 0 #303B4110;
 }
 .profileImg{
     height: 128px;
