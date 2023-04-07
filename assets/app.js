@@ -1,6 +1,5 @@
 const topDiv = document.querySelector(".top");
 const profileImg = document.querySelector(".profileImg");
-const mainDiv = document.getElementById("container");
 
 profileImg.addEventListener("click", () => {
   topDiv.classList.add("top-scrolling");
