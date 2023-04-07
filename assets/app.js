@@ -1,4 +1,5 @@
 const topDiv = document.querySelector(".top");
+const mainDiv = document.getElementById("container");
 const profileImg = document.querySelector(".profileImg");
 
 profileImg.addEventListener("click", () => {
