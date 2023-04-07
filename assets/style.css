@@ -9,23 +9,28 @@
   --fTitle: "K2D", sans-serif;
   --fExtra: "Urbanist", sans-serif;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: var(--light);
   box-shadow: inset 0 0 4px #303b4150;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--dark);
   border-radius: 4px;
 }
+
 body {
   font-family: var(--fGlobal);
   background-color: var(--light);
@@ -36,6 +41,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .top {
   display: flex;
   align-items: center;
@@ -48,32 +54,40 @@ body {
   box-shadow: 0 0 4px 0 #303b4120;
   transition: all 100ms ease-in-out;
 }
+
 .top-scrolling {
   padding: 16px;
   box-shadow: 0 0 4px 0 #303b4140;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .top-scrolling .profileImg {
   height: 60px;
 }
+
 .top-scrolling .header {
   margin-top: 0;
 }
+
 .top-scrolling .name,
 .top-scrolling .headerText {
   display: none;
 }
+
 .top-scrolling .scrolling-name {
   display: block;
 }
+
 .profileImg {
   height: 120px;
 }
+
 .header {
   margin-top: 20px;
   transition: all 500ms ease-in-out;
 }
+
 .name {
   text-align: center;
   font-size: 42px;
@@ -82,10 +96,12 @@ body {
   line-height: 1.1;
   margin-bottom: 22px;
 }
+
 .name span {
   font-size: 48px;
   color: var(--blue);
 }
+
 .scrolling-name {
   font-size: 28px;
   color: var(--blue);
@@ -93,6 +109,7 @@ body {
   font-weight: 800;
   display: none;
 }
+
 .headerText {
   text-align: center;
   font-size: 24px;
@@ -103,15 +120,35 @@ body {
   margin-top: 112px;
 }
 
+.container {
+  width: 100%;
+  margin-top: 360px;
+  padding: 4px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-family: var(--fTitle);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--blue);
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
 .linkCards {
-  margin-top: 395px;
   padding: 4px 0px;
   width: 100%;
 }
+
 .linkCards a {
   text-decoration: none;
   color: var(--dark);
 }
+
 .linkCards .card {
   height: auto;
   width: 100%;
@@ -124,19 +161,23 @@ body {
   margin-bottom: 16px;
   transition: all 0.2s ease-in;
 }
+
 .linkCards .card:hover {
   transform: scale(1.01);
 }
+
 .cardLogos {
   height: 40px;
   width: 40px;
   background-color: var(--dark);
   border-radius: 20px;
 }
+
 .cardLogos img {
   height: 100%;
   padding: 7px;
 }
+
 .cardText {
   font-size: 26px;
   font-weight: 800;
@@ -144,6 +185,7 @@ body {
   margin-left: 12px;
   text-align: center;
 }
+
 .icons {
   margin-top: 30px;
   padding-bottom: 50px;
@@ -152,24 +194,39 @@ body {
   justify-content: space-evenly;
   width: 100%;
 }
+
 .icons i {
   padding: 18px;
   color: var(--light);
   background-color: var(--dark);
   clip-path: circle(45%);
 }
+
 .icons a:hover {
   opacity: 0.8;
   transition: all 0.3s ease-in-out;
 }
+
 @media screen and (min-width: 768px) {
   body {
     padding: 0px 30vw;
   }
+
   .top-scrolling {
     padding: 16px 120px;
   }
+
   .scrolling-name {
     font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icons {
+    font-size: 18px;
+  }
+
+  .icons i {
+    padding: 14px;
   }
 }
